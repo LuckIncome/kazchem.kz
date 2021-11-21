@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<title>KazChem.kz</title>
+		<meta name="description" content=""/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="shortcut icon" href="img/favicon.png" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/slick.css" />
+		<link rel="stylesheet" href="css/jquery.fancybox.css" />
+	</head>
+	<body>		  
+		<header>
+			<div class="header_top">
+				<div class="container">
+					<a class="logo" href="/"></a>
+					<ul class="menu">
+						<li class="sub_menu_link">
+							<a class="menu_link" href="javascript:;">О компании</a>
+							<div class="sub_menu">
+								<div class="sub_menu_list">
+									<a class="sub_link" href="javascript:;">О компании</a>
+									<a class="sub_link" href="javascript:;">Стратегия и развитие</a>
+									<a class="sub_link" href="javascript:;">Отзывы</a>
+									<a class="sub_link" href="javascript:;">Вакансии</a>
+								</div>
+							</div>
+						</li>
+						<li class="sub_menu_link">
+							<a class="menu_link active" href="javascript:;">Наша продукция</a>
+							<div class="sub_menu">
+								<div class="sub_menu_list">
+									<a class="sub_link" href="catalog.html">Продукция 1</a>
+									<a class="sub_link" href="catalog.html">Продукция 2</a>
+									<a class="sub_link" href="catalog.html">Продукция 3</a>
+									<a class="sub_link" href="catalog.html">Продукция 4</a>
+								</div>
+							</div>
+						</li>
+						<li class="sub_menu_link">
+							<a class="menu_link" href="javascript:;">Услуги</a>
+							<div class="sub_menu">
+								<div class="sub_menu_list">
+									<a class="sub_link" href="javascript:;">Услуга 1</a>
+									<a class="sub_link" href="javascript:;">Услуга 2</a>
+									<a class="sub_link" href="javascript:;">Услуга 3</a>
+									<a class="sub_link" href="javascript:;">Услуга 4</a>
+								</div>
+							</div>
+						</li>
+						<li><a class="menu_link" href="javascript:;">Новости</a></li>
+						<li><a class="menu_link" href="javascript:;">Полезное</a></li>
+					</ul>
+					<div class="head_right">
+						<a class="head_tel head_right_item" href="tel:+77010063633">+7 (701) 006 36 33</a>
+						<a class="cabinet_link head_right_item" href="javascript:;">Мой кабинет</a>
+						<div class="lang_block head_right_item">
+							<div class="lang_choice">
+								<div class="lang_icon rus"></div>
+								<span class="lang_choice_name">ru</span>
+							</div>
+							<div class="other_lang">
+								<a class="lang active" href="javascript:;">ru</a>
+								<a class="lang" href="javascript:;">kz</a>
+								<a class="lang" href="javascript:;">en</a>
+							</div>
+						</div>
+						<a class="basket_btn" href="javascript:;">
+							<div class="basket_num">0</div>
+						</a>
+						<div class="mob_menu">
+		               <span class="menu_btn">
+		                  <span class="menu_btn_span menu1"></span>
+		                  <span class="menu_btn_span menu2"></span>
+		                  <span class="menu_btn_span menu3"></span>
+		               </span>
+		            </div>
+		            <div class="under_nav"></div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<section class="page">
+			<div class="container">
+				<ul class="breadcrumbs">
+					<li><a href="/">Главная</a></li>
+					<li><a>Корзина</a></li>
+				</ul>
+
+				<div class="catalog_title basket_title">
+					<div class="title title_left">Корзина</div>
+					<div class="catalog_link_list">
+						<a class="catalog_link" href="compare.html">
+							<div class="catalog_link_icon compare_icon">
+								<div class="compare_num">0</div>
+							</div>
+							<span>Сравнить</span>
+						</a>
+						<a class="catalog_link" href="favorite.html">
+							<div class="catalog_link_icon favorite_icon"></div>
+							<span>Избранное</span>
+						</a>
+						<a class="catalog_link" href="javascript:;">
+							<div class="catalog_link_icon print_icon"></div>
+							<span>Печать</span>
+						</a>
+					</div>
+				</div>
+
+				<div class="prod_inner basket_inner">
+					<div class="prod_inner_content">
+						<div class="basket">
+							<!-- <div class="basket_head">
+								<div class="basket_head_item">Товары</div>
+								<div class="basket_head_item basket_head_second">Кол-во</div>
+								<div class="basket_head_item basket_head_third">Ед. измерения</div>
+								<div class="basket_head_item basket_head_last">Упаковка</div>
+							</div>
+							<div class="basket_body">
+								<div class="basket_row">
+									<a class="basket_img" href="javascript:;">
+										<img src="img/slider_prod_3.png" alt="">
+									</a>
+									<div class="basket_text">
+										<a class="basket_name" href="javascript:;">Сульфат аммония</a>
+										<div class="text_item">
+											<p>Аммофос используется для улучшения фосфатного режима почв, в критически начальный период роста растений.</p>
+										</div>
+									</div>
+									<div class="basket_amount">
+										<span class="amount_btn remove"></span>
+										<input class="basket_summ" type="number" value="1">
+										<span class="amount_btn add"></span>
+									</div>
+									<select class="basket_sel">
+										<option value="">Тонн</option>
+										<option value="">Килограмм</option>
+									</select>
+									<select class="basket_sel">
+										<option value="">Мешки</option>
+									</select>
+									<a class="basket_del" href="javascript:;"></a>
+								</div>
+								<div class="basket_row">
+									<a class="basket_img" href="javascript:;">
+										<img src="img/slider_prod_2.png" alt="">
+									</a>
+									<div class="basket_text">
+										<a class="basket_name" href="javascript:;">Сульфат аммония</a>
+										<div class="text_item">
+											<p>Аммофос используется для улучшения фосфатного режима почв, в критически начальный период роста растений.</p>
+										</div>
+									</div>
+									<div class="basket_amount">
+										<span class="amount_btn remove"></span>
+										<input class="basket_summ" type="number" value="1">
+										<span class="amount_btn add"></span>
+									</div>
+									<select class="basket_sel">
+										<option value="">Тонн</option>
+										<option value="">Килограмм</option>
+									</select>
+									<select class="basket_sel">
+										<option value="">Мешки</option>
+									</select>
+									<a class="basket_del" href="javascript:;"></a>
+								</div>
+							</div> -->
+						</div>
+
+						<!-- <div class="basket">
+							<div class="basket_head">
+								<div class="basket_head_item">Товары</div>
+								<div class="basket_head_item basket_head_second">Кол-во</div>
+								<div class="basket_head_item basket_head_third">Ед.измерения</div>
+								<div class="basket_head_item basket_head_fourth">Упаковка</div>
+							</div>
+							<div class="basket_body">
+								<div class="basket_row">
+									<a class="basket_img" href="http://localhost:8848/catalog_inner_2.html">
+										<img src="img/slider_prod_2.png" alt="">
+									</a>
+									<div class="basket_text">
+										<a class="basket_name" href="http://localhost:8848/catalog_inner_2.html">Карбамид</a>
+										<div class="text_item">
+											<p>Лучшее твёрдое гранулированное удобрение для обеспечения растений легкодоступным фосфором и азотом — важнейшими жизненно необходимыми элементами питания, которые способствуют росту и развитию любой культуры.</p>
+										</div>
+									</div>
+									<div class="basket_amount">
+										<span class="amount_btn remove"></span>
+										<input class="basket_summ" type="number" value="1">
+										<span class="amount_btn add"></span>
+									</div>
+									<select class="basket_select">
+										<option value="" selected="">Тонн</option>
+										<option value="">Килограмм</option>
+									</select>
+									<select class="basket_select">
+										<option value="" selected="">Мешки</option>
+									</select>
+									<a class="basket_del" href="javascript:;" data-id="2" onclick="deleteCart()"></a>
+								</div>
+							</div>
+						</div> -->
+
+						<form class="prod_inner_form basket_inner_form">
+							<div class="form_title">Рассчет формы внесения</div>
+							<select class="form_select">
+								<option value="0" selected disabled>Культура</option>
+								<option value="">Рис</option>
+								<option value="">Овес</option>
+								<option value="">Ячмень</option>
+								<option value="">Лен</option>
+								<option value="">Пшеница</option>
+							</select>
+							<select class="form_select">
+								<option value="0" selected disabled>Фаза культуры</option>
+								<option value="">Посадка</option>
+								<option value="">Созревание</option>
+								<option value="">Цветение</option>
+							</select>
+							<input class="form_input" type="number" name="" placeholder="Площадь, га" required>
+							<input class="form_input" type="number" name="" placeholder="Норма высева кг/га" required>
+							<button class="form_btn yellow_btn" type="submit">Рассчитать</button>
+						</form>
+
+						<div class="akcii gray">
+							<div class="small_title">Акции</div>
+
+							<div class="akcii_list">
+								<div class="akcii_item">
+									<a class="akcii_img" href="javascript:;">
+										<img src="img/akcii_img.jpg" alt="">
+									</a>
+									<div class="akcii_text">
+										<div class="akcii_date">
+											<span>Акция</span>
+											<span>С 1 октября по 31 октября 2020 года</span>
+										</div>
+										<a class="akcii_name" href="javascript:;">Бесплатная доставка до склада или до поля при заказе удобрений свыше 100 тонн</a>
+										<div class="text_item">
+											<p>Срок акции ограничен, успейте приобрести удобрения со скидкой до 40%</p>
+										</div>
+										<a class="akcii_more" href="javascript:;"></a>
+									</div>
+								</div>
+								<div class="akcii_item">
+									<a class="akcii_img" href="javascript:;">
+										<img src="img/akcii_img.jpg" alt="">
+									</a>
+									<div class="akcii_text">
+										<div class="akcii_date">
+											<span>Акция</span>
+											<span>С 1 октября по 31 октября 2020 года</span>
+										</div>
+										<a class="akcii_name" href="javascript:;">Бесплатная доставка до склада или до поля при заказе удобрений свыше 100 тонн</a>
+										<div class="text_item">
+											<p>Срок акции ограничен, успейте приобрести удобрения со скидкой до 40%</p>
+										</div>
+										<a class="akcii_more" href="javascript:;"></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="prod_inner_right">
+						<div class="basket_form_block">
+							<div class="form_title">Оформление заказа</div>
+							<form class="basket_form" action="" method="">
+								<div class="basket_form_head">
+									<span>Итого:</span>
+									<span>
+										<span class="basket_form_count">3</span> 
+										товара
+									</span>
+								</div>
+								<input class="form_input" type="text" name="" required placeholder="ФИО">
+								<input class="form_input" type="tel" name="" required placeholder="Номер телефона">
+								<input class="form_input" type="email" name="" required placeholder="Адрес электронной почты">
+								<select class="form_select">
+									<option value="0">Область доставки</option>
+									<option value="">Акмолинская область</option>
+									<option value="">Актюбинская область</option>
+									<option value="">Атырауская область</option>
+									<option value="">Восточно-Казахстанская область</option>
+								</select>
+								<select class="form_select">
+									<option value="0">Город доставки</option>
+									<option value="">Нур-Султан</option>
+									<option value="">Алмата</option>
+									<option value="">Шымкент</option>
+									<option value="">Павлодар</option>
+								</select>
+								<textarea class="form_input form_array"></textarea>
+								<div class="basket_form_text">
+									<p>Перед составлением Вашего заказа, наш консультант перезвонит Вам, уточнит детали и ответит на Все ваши вопросы!</p>
+								</div>
+								<button class="form_btn orange_btn" type="submit">Оформить заказ</button>
+							</form>
+						</div>
+
+						<div class="delivery">
+							<div class="delivery_name">
+								<div class="delivery_icon"></div>
+								<div>Доставим заказ до вашего склада или сразу на поле</div>
+							</div>
+							<a class="delivery_btn" href="javascript:;">Рассчитать стоимость доставки</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="leaf leaf_1"></div>
+			<div class="leaf leaf_2"></div>
+			<div class="leaf leaf_3"></div>
+		</section>
+
+		<footer>
+			<div class="container">
+				<a class="logo" href="/"></a>
+				<div class="foot_right">
+					<a class="left_icon tel" href="tel:+77010063633">+7 (701) 006-36-33</a>
+					<div class="left_icon loc">г. Нур-Султан, пр-т. Мангилик Ел 52, БЦ "Noble"</div>
+					<div class="created">Разработка сайта <a href="https://astanacreative.kz/" target="_blank">Astanacreative</a></div>
+					<ul class="soc_list">
+						<li>
+							<a class="soc_link instagram" href="javascript:;" target="_blank"></a>
+						</li>
+						<li>
+							<a class="soc_link facebook" href="javascript:;" target="_blank"></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+
+		<script src="js/jquery-3.0.0.min.js"></script>
+		<script src="js/slick.min.js"></script>			
+		<script src="js/script.js"></script>	
+		<script src="js/jquery.fancybox.min.js"></script>	
+
+		<script type="text/javascript">
+			openCart();
+		</script>
+	</body>
+</html>

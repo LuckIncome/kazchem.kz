@@ -1,0 +1,3 @@
+User-agent: *
+Host: https://kazchem.kz/
+Sitemap: https://kazchem.kz/sitemap.xml

@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>Личный кабинет | ACQH</title>
+        <meta name="description" content=""/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="/css/pikaday.css?v=2" />
+        <link rel="stylesheet" href="/css/file.css?v=2" />
+        <link rel="stylesheet" href="/css/style.css?v=2" />
+        <link rel="stylesheet" href="/css/jquery.fancybox.css" />
+    
+	<link rel="stylesheet" type="text/css" href="/debug_kit/css/debug_toolbar.css" />
+<script type="text/javascript">
+//<![CDATA[
+window.DEBUGKIT_JQUERY_URL = "/debug_kit/js/jquery.js";
+//]]>
+</script><script type="text/javascript" src="/debug_kit/js/js_debug_toolbar.js"></script>
+</head>
+    <body>     
+    <div class="alert  ">
+      <div class="container">
+                                                                     
+            <div class="my-alert__close"></div>
+      </div>
+    </div>   
+        <header class="header ">
+            <div class="header-container">
+                <div class="header-top  mian-page">
+                    <div class="header-top__left ">
+                        <div class="header-top__item location">
+                           г. Нур-Султан, 
+                    Проспект Богенбай Батыра 56а, 14 этаж, офис 61
+                        </div>
+                        <div class="header-top__item  phone">
+                            <span>8 (7172) 72 59 87</span> 
+                        </div>
+                        <div class="header-top__item  mail">
+                          c.akkred@gmail.com
+                        </div>
+                    </div>
+                  <!--   <div class="lang">
+                        <a href="">
+                            KZ
+                        </a>
+                        <a href="">
+                            RU
+                        </a>
+                        <a href="">
+                            EN
+                        </a>
+                    </div> -->
+                    
+                    <div class="header-top__right">
+                        <div class="soc-seti">
+                        <a href="https://www.instagram.com/accreditation_center/" target="_blank">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 7.19298C9.33983 7.19298 7.19296 9.33986 7.19296 12C7.19296 14.6602 9.33983 16.807 12 16.807C14.6601 16.807 16.807 14.6602 16.807 12C16.807 9.33986 14.6601 7.19298 12 7.19298ZM12 15.1242C10.2797 15.1242 8.87577 13.7203 8.87577 12C8.87577 10.2797 10.2797 8.87579 12 8.87579C13.7203 8.87579 15.1242 10.2797 15.1242 12C15.1242 13.7203 13.7203 15.1242 12 15.1242ZM17.0039 5.87579C16.3828 5.87579 15.8812 6.37736 15.8812 6.99845C15.8812 7.61954 16.3828 8.12111 17.0039 8.12111C17.625 8.12111 18.1266 7.62189 18.1266 6.99845C18.1267 6.85097 18.0978 6.7049 18.0415 6.56861C17.9851 6.43232 17.9024 6.30849 17.7981 6.2042C17.6939 6.09992 17.57 6.01723 17.4337 5.96088C17.2974 5.90452 17.1514 5.87561 17.0039 5.87579ZM21.3703 12C21.3703 10.7063 21.382 9.42423 21.3094 8.13283C21.2367 6.63283 20.8945 5.30158 19.7976 4.2047C18.6984 3.10548 17.3695 2.76564 15.8695 2.69298C14.5758 2.62033 13.2937 2.63204 12.0023 2.63204C10.7086 2.63204 9.42655 2.62033 8.13515 2.69298C6.63515 2.76564 5.3039 3.10783 4.20702 4.2047C3.1078 5.30392 2.76796 6.63283 2.6953 8.13283C2.62265 9.42658 2.63436 10.7086 2.63436 12C2.63436 13.2914 2.62265 14.5758 2.6953 15.8672C2.76796 17.3672 3.11015 18.6985 4.20702 19.7953C5.30624 20.8945 6.63515 21.2344 8.13515 21.307C9.4289 21.3797 10.7109 21.368 12.0023 21.368C13.2961 21.368 14.5781 21.3797 15.8695 21.307C17.3695 21.2344 18.7008 20.8922 19.7976 19.7953C20.8969 18.6961 21.2367 17.3672 21.3094 15.8672C21.3844 14.5758 21.3703 13.2938 21.3703 12ZM19.3078 17.5266C19.1367 17.9531 18.9305 18.2719 18.6 18.6C18.2695 18.9305 17.9531 19.1367 17.5266 19.3078C16.2937 19.7977 13.3664 19.6875 12 19.6875C10.6336 19.6875 7.7039 19.7977 6.47108 19.3102C6.04452 19.1391 5.72577 18.9328 5.39765 18.6024C5.06718 18.2719 4.86093 17.9555 4.68983 17.5289C4.20233 16.2938 4.31249 13.3664 4.31249 12C4.31249 10.6336 4.20233 7.70392 4.68983 6.47111C4.86093 6.04454 5.06718 5.72579 5.39765 5.39767C5.72811 5.06954 6.04452 4.86095 6.47108 4.68986C7.7039 4.20236 10.6336 4.31251 12 4.31251C13.3664 4.31251 16.2961 4.20236 17.5289 4.68986C17.9555 4.86095 18.2742 5.0672 18.6023 5.39767C18.9328 5.72814 19.1391 6.04454 19.3101 6.47111C19.7976 7.70392 19.6875 10.6336 19.6875 12C19.6875 13.3664 19.7976 16.2938 19.3078 17.5266Z" fill="black"/>
+                            </svg>
+                            instagram
+                        </a>
+                        <a href="https://www.facebook.com/Accreditation.Kazakhstan/?modal=admin_todo_tour" target="_blank">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 3H4C3.73478 3 3.48043 3.10536 3.29289 3.29289C3.10536 3.48043 3 3.73478 3 4V20C3 20.2652 3.10536 20.5196 3.29289 20.7071C3.48043 20.8946 3.73478 21 4 21H12.615V14.04H10.277V11.315H12.615V9.315C12.615 6.99 14.035 5.723 16.115 5.723C16.814 5.721 17.514 5.757 18.21 5.83V8.25H16.775C15.647 8.25 15.427 8.788 15.427 9.575V11.31H18.124L17.774 14.035H15.426V21H20C20.2652 21 20.5196 20.8946 20.7071 20.7071C20.8946 20.5196 21 20.2652 21 20V4C21 3.73478 20.8946 3.48043 20.7071 3.29289C20.5196 3.10536 20.2652 3 20 3Z" fill="black"/>
+                                </svg>
+
+                            facebook
+                        </a>
+                         <a href="https://www.youtube.com/channel/UCNss18MY8Qxz5drZxh35yBw" target="_blank">
+                            <svg height="682pt" viewBox="-21 -117 682.66672 682" width="682pt" xmlns="http://www.w3.org/2000/svg"><path d="m626.8125 64.035156c-7.375-27.417968-28.992188-49.03125-56.40625-56.414062-50.082031-13.703125-250.414062-13.703125-250.414062-13.703125s-200.324219 0-250.40625 13.183593c-26.886719 7.375-49.03125 29.519532-56.40625 56.933594-13.179688 50.078125-13.179688 153.933594-13.179688 153.933594s0 104.378906 13.179688 153.933594c7.382812 27.414062 28.992187 49.027344 56.410156 56.410156 50.605468 13.707031 250.410156 13.707031 250.410156 13.707031s200.324219 0 250.40625-13.183593c27.417969-7.378907 49.03125-28.992188 56.414062-56.40625 13.175782-50.082032 13.175782-153.933594 13.175782-153.933594s.527344-104.382813-13.183594-154.460938zm-370.601562 249.878906v-191.890624l166.585937 95.945312zm0 0"/></svg>
+
+                            youtube
+                        </a>
+                       
+                    </div>
+                    <div class="enter-container">
+                        <a href="/users/login" class="enter">
+                            Кабинет
+                        </a>
+                       <!--  <div class="enter-list">
+                            <a href="">
+                                Пункт личного кабинета
+                            </a>
+                            <a href="">
+                                Пункт личного кабинета
+                            </a>
+                            <a href="">
+                                Пункт личного кабинета
+                            </a>
+                            <a href="">
+                                Выйти
+                            </a>
+                        </div> -->
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-miiddle">
+                <div class="header-container">
+                    <a href="/" class="logo logo-white">
+                        <img src="/img/logo_white.svg" alt="">
+                    </a>
+                    <ul class="nav">
+                       <div class="mobile-menu-top">
+                                    <form class="mobile-menu-search">
+                                        <input type="text">
+                                        <button>
+                                            <svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M11.5714 7.92857C11.5714 10.4096 9.55246 12.4286 7.07143 12.4286C4.5904 12.4286 2.57143 10.4096 2.57143 7.92857C2.57143 5.44754 4.5904 3.42857 7.07143 3.42857C9.55246 3.42857 11.5714 5.44754 11.5714 7.92857ZM16.7143 16.2857C16.7143 15.9442 16.5737 15.6127 16.3426 15.3817L12.8973 11.9364C13.7109 10.7612 14.1429 9.35491 14.1429 7.92857C14.1429 4.0212 10.9788 0.857142 7.07143 0.857142C3.16406 0.857142 0 4.0212 0 7.92857C0 11.8359 3.16406 15 7.07143 15C8.49777 15 9.90402 14.5681 11.0792 13.7545L14.5246 17.1897C14.7556 17.4308 15.0871 17.5714 15.4286 17.5714C16.1317 17.5714 16.7143 16.9888 16.7143 16.2857Z" fill="#FFC200"></path>
+                                            </svg>
+                                        </button>
+                                    </form>
+                                    <div class="close-mobile-menu">
+                                        <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M10 0.8125C4.64844 0.8125 0.3125 5.14844 0.3125 10.5C0.3125 15.8516 4.64844 20.1875 10 20.1875C15.3516 20.1875 19.6875 15.8516 19.6875 10.5C19.6875 5.14844 15.3516 0.8125 10 0.8125ZM14.7266 13.0781C14.9219 13.2344 14.9219 13.5469 14.7266 13.7422L13.2031 15.2656C13.0078 15.4609 12.6953 15.4609 12.5391 15.2656L10 12.6875L7.42188 15.2656C7.26562 15.4609 6.95312 15.4609 6.75781 15.2656L5.23438 13.7031C5.03906 13.5469 5.03906 13.2344 5.23438 13.0391L7.8125 10.5L5.23438 7.96094C5.03906 7.80469 5.03906 7.49219 5.23438 7.29688L6.79688 5.77344C6.95312 5.57812 7.26562 5.57812 7.46094 5.77344L10 8.3125L12.5391 5.77344C12.6953 5.57812 13.0078 5.57812 13.2031 5.77344L14.7266 7.29688C14.9219 7.49219 14.9219 7.80469 14.7266 7.96094L12.1875 10.5L14.7266 13.0781Z" fill="#FFC200"></path>
+                                        </svg>
+
+                                    </div>
+                                </div>
+                        <li>
+                            <span>
+                                О центре
+                            </span>
+                            <div class="sub-menu">
+                                <ul class="sub-menu-list">
+                                    <li>
+                                        <a href="/page/o_nas">
+                                            О нас
+                                        </a>
+                                    </li>
+                                    <li><a href="/collectives">
+                                        Коллектив
+                                    </a></li>
+                                    <li><a href="/experts">
+                                        База экспертов
+                                    </a></li>
+                                    <li><a href="/news"> Новости </a></li>
+                                    <li><a href="/smi"> СМИ о нас </a></li>
+                                    <li><a href="/partners">Наши партнеры </a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <span>
+                                Аккредитация
+                            </span>
+                            <div class="sub-menu">
+                                <ul class="sub-menu-list">
+                                    <li>
+                                        <a href="/page/vneshnyaya_kompleksnaya_otsenka">
+                                            Внешняя комплексная оценка
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/page/uslugi_tsentr_akkreditatsii_po_podgotovke_k_akkreditatsii">
+                                            Подготовка к аккредитации
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/price">
+                                            Прейскурант  
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <span>
+                                Полезная информация 
+                            </span>
+                            <div class="sub-menu">
+                                <ul class="sub-menu-list">
+                                    <li>
+                                        <a href="/videos">
+                                            Видео
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/infos">
+                                            Информационные бюллетени
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/guides">
+                                            Руководства
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/standarts">
+                                            Стандарты аккредитации
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/npa">
+                                             Нормативно-правовые акты
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/sops">
+                                            СОП
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="/articles">
+                                            Статьи 
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <span>
+                                Стать экспертом
+                            </span>
+                            <div class="sub-menu">
+                                <ul class="sub-menu-list">
+                                    <li>
+                                        <a href="/page/trebovanie">
+                                            Требования
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/RequestExperts">
+                                            Подать заявку и резюме
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="/conf">
+                                Конференция
+                            </a>
+                            <!-- <div class="sub-menu">
+                                <ul class="sub-menu-list">
+                                    <li>
+                                        <a href="">
+                                            Требования
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Подать заявку и резюме
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div> -->
+                        </li>
+                        <li>
+                            <a href="/contacts">
+                                Контакты
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="mob-start">                 
+                        <span class="menu1"></span>
+                        <span class="menu2"></span>
+                        <span class="menu3"></span>                 
+                    </div>
+                    <div class="search">
+                        <input type="text" class="input" placeholder="Поиск">
+                        <button class="search-btn"></button>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="cabinet">
+	<div class="container">
+		<div class="cabinet-asside">
+			<ul class="side-bar">
+				<li>
+					<a href="/clinic_cabinet" class="active">
+						Личный кабинет
+					</a>
+				</li>
+				<li>
+					<a href="/users/requests">
+						Обратная связь
+					</a>
+				</li>
+				<li>
+					<a href="/events">
+						Постаккредитационный момент
+					</a>
+				</li>
+				 <li>
+		            <a href="/users/logout" >
+		                Выход		            </a>
+		        </li>
+			</ul>
+		</div>
+		<div class="cabinet-content">
+			<form action="/users/clinic_cabinet" class="request-form full-reguest-form" id="UserClinicCabinetForm" enctype="multipart/form-data" method="post" accept-charset="utf-8"><div style="display:none;"><input type="hidden" name="_method" value="PUT"/></div>			<!-- <form action="/users/reg_clinic" class="request-form" method="POST"> -->
+				<div class="step">
+					<div class="step-title">
+						Шаг 1
+					</div>
+					<p>
+						Заявление (данное заявление необходимо скачать, распечатать и заполнить в соответствии с графами, завизировать первым руководителем, печатью МО и прикрепить к форме)
+
+					</p>
+					<div class="step-file">
+						<a href="" class="file-download" download="download">
+							<span>
+								Скачать
+							</span>
+						</a>
+						<div class="custom-file-upload btn-file-upbload">
+						   	<input type="file" name="data[ClinicData][zayavlenie]" id="file-1" class="inputfile inputfile-1">
+							<label for="file-1">
+								
+								<div class="custom-file-upload__text">
+		    						Прикрепить
+		    					</div>
+							</label>
+						</div>
+					</div>
+				</div>
+				<div class="step-title">
+					Шаг 2
+				</div>
+				<div class="form-item">
+					<label for="" class="form-item__label">
+						Наименование МО
+					</label>
+					<input type="text" value="asdasd" class="form-item__input" name="data[ClinicData][title]" required="required">
+				</div>
+				<div class="form-item">
+					<label for="" class="form-item__label" required="required">
+						Область
+					</label>
+					<select name="data[User][oblast]" id="" class="form-select" required="required">
+						<option value="Акмолинская область" selected>
+							Акмолинская область
+						</option>
+						<option value="Алматинская область" >
+							Алматинская область
+						</option>
+						<option value="Актюбинская область" >
+							Актюбинская область
+						</option>
+						<option value="Атырауская область" >
+							Атырауская область
+						</option>
+						<option value="Восточно-Казахстанская область" >
+							Восточно-Казахстанская область
+						</option>
+						<option value="г. Алматы" >
+							г. Алматы
+						</option>
+						<option value="г. Нур-Султан" >
+							г. Нур-Султан
+						</option>
+						<option value="г. Шымкент" >
+							г. Шымкент
+						</option>
+						<option value="Жамбылская область" >
+							Жамбылская область
+						</option>
+						<option value="Заподно-Казахстанская область" >
+							Заподно-Казахстанская область
+						</option>
+						<option value="Карагандинская область" >
+							Карагандинская область
+						</option>
+						<option value="Костанайская область" >
+							Костанайская область
+						</option>
+						<option value="Кызылординская область" >
+							Кызылординская область
+						</option>
+						<option value="Мангистауская область" >
+							Мангистауская область
+						</option>
+						<option value="Павлодарская область" >
+							Павлодарская область
+						</option>
+						<option value="Северо-Казахстанская область" >
+							Северо-Казахстанская область
+						</option>
+						<option value="Туркестанская область" >
+							Туркестанская область
+						</option>
+						
+					</select>
+				</div>
+				<div class="form-item">
+					<label for="" class="form-item__label">
+						Город
+					</label>
+					<input type="text" name="data[User][city]" value="test" class="form-item__input" required="required">
+				</div>
+				<div class="form-item">
+					<label for="" class="form-item__label">
+						Адрес головного здания (юридический)
+					</label>
+					<input type="text" name="data[ClinicData][address_yur]" class="form-item__input" value="123" required="required">
+				</div>
+				<div class="form-item">
+					<label for="" class="form-item__label">
+						Адрес головного здания (фактический)
+					</label>
+					<input type="text" value="asdasd" name="data[ClinicData][address_fakt]" class="form-item__input" required="required">
+				</div>
+				<div class="form-item">
+					<label for="" class="form-item__label">
+						Лицензий МО со всеми приложениями
+					</label>
+					<div class="custom-file-upload input-upload-file">
+					   	<input type="file" name="data[ClinicData][licenzia]" id="file-2" class="inputfile inputfile-2" required="">
+						<label for="file-2">
+							<div class="custom-file-upload__text">
+	    						Прикрепить PDF
+	    					</div>
+						</label>
+					</div>
+				</div>
+				<div class="form-item">
+					<label for="" class="form-item__label">
+						Форма предоставления медицинской помощи
+					</label>
+					<input type="text" value="123" name="data[ClinicData][forma]" class="form-item__input" required="required">
+					
+				</div>
+				
+				<div class="form-item">
+					<label for="" class="form-item__label">
+						Оказание специализированной медицинской помощи
+					</label>
+					<input type="text" value="Клиника" name="data[ClinicData][okozanie]" class="form-item__input" required="required">
+					
+				</div>
+				<div class="form-item">
+					<label for="" class="form-item__label">
+						Структура медицинской организации
+					</label>
+					<div class="custom-file-upload input-upload-file">
+					   	<input type="file" name="data[ClinicData][struktura]" id="file-3" class="inputfile inputfile-2" required="">
+						<label for="file-3">
+							<div class="custom-file-upload__text">
+	    						Прикрепить PDF
+	    					</div>
+						</label>
+					</div>
+				</div>
+				<div class="form-item">
+					<label for="" class="form-item__label">
+						Сведения о предыдущей аккредитации. данные с 2009 года,  год прохождения, категория
+					</label>
+					<input type="text" value="123" name="data[ClinicData][svedeniya]" class="form-item__input" required="required">
+				</div>
+				<div class="form-item">
+					<label for="" class="form-item__label">
+						Реквизиты
+					</label>
+					<input type="text" value="123" name="data[ClinicData][rekvizity]" class="form-item__input" required="required">
+				</div>
+				<div class="form-item">
+					<label for="" class="form-item__label">
+						Презентация о медицинской организации
+					</label>
+					<div class="custom-file-upload input-upload-file">
+					   	<input type="file" name="data[ClinicData][prezentaciya]" id="file-4" class="inputfile inputfile-2" required="required">
+						<label for="file-4">
+							<div class="custom-file-upload__text">
+	    						Прикрепить (pptx)
+	    					</div>
+						</label>
+					</div>
+				</div>
+				<div class="form-item">
+					<label for="" class="form-item__label">
+						Справка о гос. регистрации с портала E-gove на 2х языках
+					</label>
+					<div class="custom-file-upload input-upload-file">
+					   	<input type="file" name="data[ClinicData][spravka]" id="file-5" class="inputfile inputfile-2" required="">
+						<label for="file-5">
+							<div class="custom-file-upload__text" >
+	    						Прикрепить
+	    					</div>
+						</label>
+					</div>
+				</div>
+				<div class="form-item">
+					<label for="" class="form-item__label">
+						Штатное расписание
+					</label>
+					<div class="custom-file-upload input-upload-file">
+					   	<input type="file" name="data[ClinicData][shtatnoe_raspisanie]" id="file-6" class="inputfile inputfile-2" required="">
+						<label for="file-6">
+							<div class="custom-file-upload__text">
+	    						Прикрепить (pptx)
+	    					</div>
+						</label>
+					</div>
+				</div>
+				<div class="form-item">
+					<label for="" class="form-item__label">
+						E-mail медицинской организаций (Логин)
+					</label>
+					<input type="text" value="nurzhananuarbek@mail.ru" name="data[User][username]" class="form-item__input" required="required">
+				</div>
+				<div class="form-item">
+					<label for="" class="form-item__label">
+						Контактные данные ответственного лица за процедуру аккредитации  (ФИО, сотовый номер, городской и e-mail)
+					</label>
+					<input type="text" value="123123"  name="data[ClinicData][kontakt]" class="form-item__input" required="required">
+				</div>
+				<!-- <div class="form-item">
+					<label for="" class="form-item__label">
+						Придумайте пароль
+					</label>
+					<input type="password" name="data[User][password]" class="form-item__input" required="required">
+				</div>
+				<div class="form-item">
+					<label for="" class="form-item__label">
+						Повторите пароль
+					</label>
+					<input type="password" name="data[User][password_repeat]" class="form-item__input" required="required">
+				</div> -->
+
+			
+				<button class="button" type="submit">
+					Редактировать
+				</button>
+			</form>
+		</div>
+	</div>
+</div>    
+        <footer class="footer">
+                        <div class="footer-top">
+                <div class="container">
+                    <div class="footer-top__item location-footer">
+                      г. Нур-Султан, 
+                    Проспект Богенбай Батыра 56а, 14 этаж, офис 61
+                    </div>
+                    
+                    <div class="footer-top__item phone-footer">
+                        8 (7172) 72 59 87
+                    </div>
+                    <div class="footer-top__item mail-footer">
+                     c.akkred@gmail.com
+                    </div>
+                </div>
+            </div>
+                    <div class="footer-middle">
+                <div class="container">
+                    <div class="footer-nav">
+                        <div class="footer-nav__title">
+                            О компании
+                        </div>
+                        <a href="/page/o_nas" class="footer-nav__link">
+                            О нас
+                        </a>
+
+                        <a href="/collectives" class="footer-nav__link">
+                            Коллектив
+                        </a>
+                        <a href="/smi" class="footer-nav__link">
+                            СМИ о нас
+                        <a href="/news" class="footer-nav__link">
+                            Новости
+                        </a>
+                        <a href="/partners" class="footer-nav__link">
+                            Наши партнеры
+                        </a>
+                    </div>
+                    <div class="footer-nav">
+                        <div class="footer-nav__title">
+                            Аккредитация
+                        </div>
+                      
+                        <a href="/page/uslugi_tsentr_akkreditatsii_po_podgotovke_k_akkreditatsii" class="footer-nav__link">
+                            Подготовка к аккредитации 
+
+                        </a>
+                        <a href="/page/vneshnyaya_kompleksnaya_otsenka" class="footer-nav__link">
+                            Внешняя комплексная оценка
+
+                        </a>
+                    
+                        <a href="/request_clinics" class="footer-nav__link">
+                            Подать заявка на аккредитацию
+                        </a>
+                        
+                    </div>
+                    <div class="footer-nav">
+                        <div class="footer-nav__title">
+                            Стать экспертом
+                        </div>
+                        <a href="/page/trebovanie" class="footer-nav__link">
+                            Требования
+                        </a>
+                        <a href="/RequestExperts" class="footer-nav__link">
+                            Подать заявку и резюме
+
+                        </a>
+                        
+                    </div>
+                    <div class="footer-nav">
+                        
+                        <a href="/conf" class="footer-nav__link">
+                            Конференция 
+                        </a>
+                        <a href="/contacts" class="footer-nav__link">
+                            Контакты
+
+                        </a>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="container">
+                    <div class="copyright">
+                        © Центр аккредитации в сфере здравоохранения 2020
+                    </div>
+                    <div class="footer-soc-set">
+                        <a href="https://www.instagram.com/accreditation_center/" target="_blank">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 7.19298C9.33983 7.19298 7.19296 9.33986 7.19296 12C7.19296 14.6602 9.33983 16.807 12 16.807C14.6601 16.807 16.807 14.6602 16.807 12C16.807 9.33986 14.6601 7.19298 12 7.19298ZM12 15.1242C10.2797 15.1242 8.87577 13.7203 8.87577 12C8.87577 10.2797 10.2797 8.87579 12 8.87579C13.7203 8.87579 15.1242 10.2797 15.1242 12C15.1242 13.7203 13.7203 15.1242 12 15.1242ZM17.0039 5.87579C16.3828 5.87579 15.8812 6.37736 15.8812 6.99845C15.8812 7.61954 16.3828 8.12111 17.0039 8.12111C17.625 8.12111 18.1266 7.62189 18.1266 6.99845C18.1267 6.85097 18.0978 6.7049 18.0415 6.56861C17.9851 6.43232 17.9024 6.30849 17.7981 6.2042C17.6939 6.09992 17.57 6.01723 17.4337 5.96088C17.2974 5.90452 17.1514 5.87561 17.0039 5.87579ZM21.3703 12C21.3703 10.7063 21.382 9.42423 21.3094 8.13283C21.2367 6.63283 20.8945 5.30158 19.7976 4.2047C18.6984 3.10548 17.3695 2.76564 15.8695 2.69298C14.5758 2.62033 13.2937 2.63204 12.0023 2.63204C10.7086 2.63204 9.42655 2.62033 8.13515 2.69298C6.63515 2.76564 5.3039 3.10783 4.20702 4.2047C3.1078 5.30392 2.76796 6.63283 2.6953 8.13283C2.62265 9.42658 2.63436 10.7086 2.63436 12C2.63436 13.2914 2.62265 14.5758 2.6953 15.8672C2.76796 17.3672 3.11015 18.6985 4.20702 19.7953C5.30624 20.8945 6.63515 21.2344 8.13515 21.307C9.4289 21.3797 10.7109 21.368 12.0023 21.368C13.2961 21.368 14.5781 21.3797 15.8695 21.307C17.3695 21.2344 18.7008 20.8922 19.7976 19.7953C20.8969 18.6961 21.2367 17.3672 21.3094 15.8672C21.3844 14.5758 21.3703 13.2938 21.3703 12ZM19.3078 17.5266C19.1367 17.9531 18.9305 18.2719 18.6 18.6C18.2695 18.9305 17.9531 19.1367 17.5266 19.3078C16.2937 19.7977 13.3664 19.6875 12 19.6875C10.6336 19.6875 7.7039 19.7977 6.47108 19.3102C6.04452 19.1391 5.72577 18.9328 5.39765 18.6024C5.06718 18.2719 4.86093 17.9555 4.68983 17.5289C4.20233 16.2938 4.31249 13.3664 4.31249 12C4.31249 10.6336 4.20233 7.70392 4.68983 6.47111C4.86093 6.04454 5.06718 5.72579 5.39765 5.39767C5.72811 5.06954 6.04452 4.86095 6.47108 4.68986C7.7039 4.20236 10.6336 4.31251 12 4.31251C13.3664 4.31251 16.2961 4.20236 17.5289 4.68986C17.9555 4.86095 18.2742 5.0672 18.6023 5.39767C18.9328 5.72814 19.1391 6.04454 19.3101 6.47111C19.7976 7.70392 19.6875 10.6336 19.6875 12C19.6875 13.3664 19.7976 16.2938 19.3078 17.5266Z" fill="#FFFFFF"/>
+                            </svg>
+                            instagram
+                        </a>
+                        <a href="https://www.facebook.com/Accreditation.Kazakhstan/?modal=admin_todo_tour" target="_blank">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 3H4C3.73478 3 3.48043 3.10536 3.29289 3.29289C3.10536 3.48043 3 3.73478 3 4V20C3 20.2652 3.10536 20.5196 3.29289 20.7071C3.48043 20.8946 3.73478 21 4 21H12.615V14.04H10.277V11.315H12.615V9.315C12.615 6.99 14.035 5.723 16.115 5.723C16.814 5.721 17.514 5.757 18.21 5.83V8.25H16.775C15.647 8.25 15.427 8.788 15.427 9.575V11.31H18.124L17.774 14.035H15.426V21H20C20.2652 21 20.5196 20.8946 20.7071 20.7071C20.8946 20.5196 21 20.2652 21 20V4C21 3.73478 20.8946 3.48043 20.7071 3.29289C20.5196 3.10536 20.2652 3 20 3Z" fill="#FFFFFF"/>
+                                </svg>
+                                facebook
+                        </a>
+                        <a href="https://www.youtube.com/channel/UCNss18MY8Qxz5drZxh35yBw" target="_blank">
+                            <svg height="682pt" viewBox="-21 -117 682.66672 682" width="682pt" xmlns="http://www.w3.org/2000/svg"><path d="m626.8125 64.035156c-7.375-27.417968-28.992188-49.03125-56.40625-56.414062-50.082031-13.703125-250.414062-13.703125-250.414062-13.703125s-200.324219 0-250.40625 13.183593c-26.886719 7.375-49.03125 29.519532-56.40625 56.933594-13.179688 50.078125-13.179688 153.933594-13.179688 153.933594s0 104.378906 13.179688 153.933594c7.382812 27.414062 28.992187 49.027344 56.410156 56.410156 50.605468 13.707031 250.410156 13.707031 250.410156 13.707031s200.324219 0 250.40625-13.183593c27.417969-7.378907 49.03125-28.992188 56.414062-56.40625 13.175782-50.082032 13.175782-153.933594 13.175782-153.933594s.527344-104.382813-13.183594-154.460938zm-370.601562 249.878906v-191.890624l166.585937 95.945312zm0 0" fill="#fff"/></svg>
+
+                            youtube
+                        </a>
+                       
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        
+
+        <script src="/js/jquery-3.0.0.min.js"></script>  
+        <script src="/js/slick.min.js"></script>
+        <script src="/js/jquery.waypoints.min.js"></script>
+        <script src="/js/jquery.inputmask.bundle.js"></script>   
+        <script src="/js/jquery.spincrement.min.js"></script>   
+        <script src="/js/pikaday.js"></script>
+        <script src="/js/script.js"></script>
+        <script src="/js/file.js"></script>
+        <script src="/js/tab.js"></script>       
+        <script src="/js/jquery.fancybox.min.js"></script>       
+    <div id="debug-kit-toolbar">
+			<ul id="panel-tabs">
+			<li class="panel-tab icon">
+				<a href="#hide" id="hide-toolbar">
+					<img src="/debug_kit/img/cake.icon.png" alt="CakePHP" />				</a>
+			</li>
+								<li class="panel-tab">
+			<a href="#history">History</a>				<div class="panel-content" id="history-tab">
+					<a href="#" class="panel-toggle ui-control ui-button">+</a>
+					<div class="panel-resize-region">
+						<div class="panel-content-data">
+							<h2> Request History</h2>
+	4 previous requests available	<ul class="history-list">
+		<li><a href="#" class="history-link" id="history-restore-current">Restore to current request</a>		</li>
+					<li><a href="/debug_kit/toolbar_access/history_state/1" class="history-link">users/clinic_cabinet</a></li>
+					<li><a href="/debug_kit/toolbar_access/history_state/2" class="history-link">img/link.svg</a></li>
+					<li><a href="/debug_kit/toolbar_access/history_state/3" class="history-link">admin/showreviews</a></li>
+					<li><a href="/debug_kit/toolbar_access/history_state/4" class="history-link">img/link.svg</a></li>
+			</ul>
+						</div>
+						<div class="panel-content-data panel-history" id="history-history">
+							<!-- content here -->
+						</div>
+					</div>
+					<div class="panel-resize-handle ui-control">====</div>
+				</div>
+						</li>
+								<li class="panel-tab">
+			<a href="#session">Session</a>				<div class="panel-content" id="session-tab">
+					<a href="#" class="panel-toggle ui-control ui-button">+</a>
+					<div class="panel-resize-region">
+						<div class="panel-content-data">
+							<h2>Session</h2>
+<ul class="neat-array depth-0"><li><strong>Config</strong>(array)<ul class="neat-array depth-1"><li><strong>userAgent</strong>6e9003c5c9a8a8faa69134a99b1b0674</li><li><strong>time</strong>1593557168</li><li><strong>countdown</strong>10</li></ul></li><li><strong>Message</strong>(empty)</li><li><strong>Auth</strong>(array)<ul class="neat-array depth-1"><li><strong>User</strong>(array)<ul class="neat-array depth-2"><li><strong>id</strong>24</li><li><strong>username</strong>nurzhananuarbek@mail.ru</li><li><strong>role</strong>user</li><li><strong>type</strong>clinic</li><li><strong>oblast</strong>Акмолинская область</li><li><strong>city</strong>test</li><li><strong>active</strong>(false)</li><li><strong>created</strong>2020-06-30 23:46:02</li><li><strong>modified</strong>2020-06-30 23:46:02</li></ul></li></ul></li><li><strong>lang</strong>ru</li></ul>						</div>
+						<div class="panel-content-data panel-history" id="session-history">
+							<!-- content here -->
+						</div>
+					</div>
+					<div class="panel-resize-handle ui-control">====</div>
+				</div>
+						</li>
+								<li class="panel-tab">
+			<a href="#request">Request</a>				<div class="panel-content" id="request-tab">
+					<a href="#" class="panel-toggle ui-control ui-button">+</a>
+					<div class="panel-resize-region">
+						<div class="panel-content-data">
+							<h2> Request</h2>
+
+<h4>Cake Params</h4>
+<ul class="neat-array depth-0"><li><strong>plugin</strong>(null)</li><li><strong>controller</strong>users</li><li><strong>action</strong>clinic_cabinet</li><li><strong>named</strong>(empty)</li><li><strong>pass</strong>(empty)</li></ul>
+<h4>Post data</h4>
+<ul class="neat-array depth-0"><li><strong>User</strong>(array)<ul class="neat-array depth-1"><li><strong>id</strong>24</li><li><strong>username</strong>nurzhananuarbek@mail.ru</li><li><strong>password</strong>$2a$10$flZuLjYzNU5GPOXiBY5co.9cqGWfis2OIojm5MJT45WKncH/g1Jya</li><li><strong>role</strong>user</li><li><strong>type</strong>clinic</li><li><strong>oblast</strong>Акмолинская область</li><li><strong>city</strong>test</li><li><strong>active</strong>(false)</li><li><strong>created</strong>2020-06-30 23:46:02</li><li><strong>modified</strong>2020-06-30 23:46:02</li></ul></li></ul>
+<h4>Query string</h4>
+<p class="info">No querystring data.</p>
+<h4>Cookie</h4>
+	<p class="info">To view Cookies, add CookieComponent to Controller</p>
+
+<h4>Current Route</h4>
+<ul class="neat-array depth-0"><li><strong>keys</strong>(array)<ul class="neat-array depth-1"><li><strong>0</strong>controller</li><li><strong>1</strong>action</li></ul></li><li><strong>options</strong>(array)<ul class="neat-array depth-1"><li><strong>defaultRoute</strong>(true)</li></ul></li><li><strong>defaults</strong>(array)<ul class="neat-array depth-1"><li><strong>plugin</strong>(null)</li></ul></li><li><strong>template</strong>/:controller/:action/*</li></ul>						</div>
+						<div class="panel-content-data panel-history" id="request-history">
+							<!-- content here -->
+						</div>
+					</div>
+					<div class="panel-resize-handle ui-control">====</div>
+				</div>
+						</li>
+								<li class="panel-tab">
+			<a href="#sql_log">Sql Log</a>				<div class="panel-content" id="sql_log-tab">
+					<a href="#" class="panel-toggle ui-control ui-button">+</a>
+					<div class="panel-resize-region">
+						<div class="panel-content-data">
+							<h2>Sql Logs</h2>
+		<div class="sql-log-panel-query-log">
+		<h4>default</h4>
+		<h5>Total Time: 0 ms <br />Total Queries: 2 queries</h5><table class="debug-table"><tr><th>Query</th> <th>Affected</th> <th>Num. rows</th> <th>Took (ms)</th> <th>Actions</th></tr><tr class="odd"><td>SELECT `User`.`id`, `User`.`username`, `User`.`password`, `User`.`role`, `User`.`type`, `User`.`oblast`, `User`.`city`, `User`.`active`, `User`.`created`, `User`.`modified` FROM `acqhkz_new`.`users` AS `User`   WHERE `User`.`id` = 24    LIMIT 1</td> <td>1</td> <td>1</td> <td>0</td> <td><form action="/debug_kit/toolbar_access/sql_explain" id="logForm0_228" method="post" accept-charset="utf-8"><div style="display:none;"><input type="hidden" name="_method" value="POST"/></div><input type="hidden" name="data[log][ds]" id="logDs0_228" value="default"/><input type="hidden" name="data[log][sql]" id="logSql0_228" value="SELECT `User`.`id`, `User`.`username`, `User`.`password`, `User`.`role`, `User`.`type`, `User`.`oblast`, `User`.`city`, `User`.`active`, `User`.`created`, `User`.`modified` FROM `acqhkz_new`.`users` AS `User`   WHERE `User`.`id` = 24    LIMIT 1"/><input type="hidden" name="data[log][hash]" id="logHash0_228" value="c309a57df33cf140c1d1cead4bcdac102662893f"/><input  class="sql-explain-link" type="submit" value="Explain"/></form></td></tr>
+<tr class="even"><td>SELECT `ClinicData`.`id`, `ClinicData`.`user_id`, `ClinicData`.`title`, `ClinicData`.`address_yur`, `ClinicData`.`address_fakt`, `ClinicData`.`licenzia`, `ClinicData`.`forma`, `ClinicData`.`okozanie`, `ClinicData`.`struktura`, `ClinicData`.`svedeniya`, `ClinicData`.`rekvizity`, `ClinicData`.`prezentaciya`, `ClinicData`.`spravka`, `ClinicData`.`shtatnoe_raspisanie`, `ClinicData`.`kontakt`, `ClinicData`.`created`, `ClinicData`.`modified` FROM `acqhkz_new`.`clinic_data` AS `ClinicData`   WHERE `ClinicData`.`user_id` = 24    LIMIT 1</td> <td>1</td> <td>1</td> <td>0</td> <td><form action="/debug_kit/toolbar_access/sql_explain" id="logForm1_466" method="post" accept-charset="utf-8"><div style="display:none;"><input type="hidden" name="_method" value="POST"/></div><input type="hidden" name="data[log][ds]" id="logDs1_466" value="default"/><input type="hidden" name="data[log][sql]" id="logSql1_466" value="SELECT `ClinicData`.`id`, `ClinicData`.`user_id`, `ClinicData`.`title`, `ClinicData`.`address_yur`, `ClinicData`.`address_fakt`, `ClinicData`.`licenzia`, `ClinicData`.`forma`, `ClinicData`.`okozanie`, `ClinicData`.`struktura`, `ClinicData`.`svedeniya`, `ClinicData`.`rekvizity`, `ClinicData`.`prezentaciya`, `ClinicData`.`spravka`, `ClinicData`.`shtatnoe_raspisanie`, `ClinicData`.`kontakt`, `ClinicData`.`created`, `ClinicData`.`modified` FROM `acqhkz_new`.`clinic_data` AS `ClinicData`   WHERE `ClinicData`.`user_id` = 24    LIMIT 1"/><input type="hidden" name="data[log][hash]" id="logHash1_466" value="9734ca3dfbc3a67f6ff74fd9bbe25beef67901d3"/><input  class="sql-explain-link" type="submit" value="Explain"/></form></td></tr></table>		<h4>Query Explain:</h4>
+		<div id="sql-log-explain-default">
+			<a id="debug-kit-explain-default"> </a>
+			<p>Click an "Explain" link above, to see the query explanation.</p>
+		</div>
+			</div>
+							</div>
+						<div class="panel-content-data panel-history" id="sql_log-history">
+							<!-- content here -->
+						</div>
+					</div>
+					<div class="panel-resize-handle ui-control">====</div>
+				</div>
+						</li>
+								<li class="panel-tab">
+			<a href="#timer">Timer</a>				<div class="panel-content" id="timer-tab">
+					<a href="#" class="panel-toggle ui-control ui-button">+</a>
+					<div class="panel-resize-region">
+						<div class="panel-content-data">
+							<div class="debug-info">
+	<h2>Memory</h2>
+	<div class="peak-mem-use">
+	<p><strong>Peak Memory Use</strong> 3.72 MB</p>	</div>
+
+	<table class="debug-table"><tr><th>Message</th> <th>Memory use</th></tr><tr class="odd"><td>Component initialization</td> <td>1.48 MB</td></tr>
+<tr class="even"><td>Controller action start</td> <td>1.62 MB</td></tr>
+<tr class="odd"><td>Controller render start</td> <td>2.29 MB</td></tr>
+<tr class="even"><td>View render complete</td> <td>2.73 MB</td></tr></table></div>
+
+<div class="debug-info debug-timers">
+	<h2>Timers</h2>
+	<div class="request-time">
+				<p><strong>Total Request Time:</strong> 197 (ms)</p>	</div>
+<table class="debug-table"><tr><th>Message</th> <th>Time in ms</th> <th>Graph</th></tr><tr class="odd"><td>Core Processing (Derived from $_SERVER["REQUEST_TIME"])</td> <td>49.44</td> <td><div style="width: 350px;" class="debug-kit-graph-bar"><div style="margin-left: 0px; width: 88px" title="Starting 0.00ms into the request, taking 49.44ms" class="debug-kit-graph-bar-value"> </div></div></td></tr>
+<tr class="even"><td>Event: Controller.initialize</td> <td>0.14</td> <td><div style="width: 350px;" class="debug-kit-graph-bar"><div style="margin-left: 88px; width: 1px" title="Starting 49.44ms into the request, taking 0.14ms" class="debug-kit-graph-bar-value"> </div></div></td></tr>
+<tr class="odd"><td>Event: Controller.startup</td> <td>3.55</td> <td><div style="width: 350px;" class="debug-kit-graph-bar"><div style="margin-left: 89px; width: 6px" title="Starting 49.61ms into the request, taking 3.55ms" class="debug-kit-graph-bar-value"> </div></div></td></tr>
+<tr class="even"><td>Controller action</td> <td>99.69</td> <td><div style="width: 350px;" class="debug-kit-graph-bar"><div style="margin-left: 90px; width: 178px" title="Starting 50.51ms into the request, taking 99.69ms" class="debug-kit-graph-bar-value"> </div></div></td></tr>
+<tr class="odd"><td>Event: Controller.beforeRender</td> <td>8.26</td> <td><div style="width: 350px;" class="debug-kit-graph-bar"><div style="margin-left: 268px; width: 15px" title="Starting 150.16ms into the request, taking 8.26ms" class="debug-kit-graph-bar-value"> </div></div></td></tr>
+<tr class="even"><td> &raquo; Processing toolbar data</td> <td>8.08</td> <td><div style="width: 350px;" class="debug-kit-graph-bar"><div style="margin-left: 268px; width: 14px" title="Starting 150.23ms into the request, taking 8.08ms" class="debug-kit-graph-bar-value"> </div></div></td></tr>
+<tr class="odd"><td>Rendering View</td> <td>2.91</td> <td><div style="width: 350px;" class="debug-kit-graph-bar"><div style="margin-left: 301px; width: 5px" title="Starting 168.85ms into the request, taking 2.91ms" class="debug-kit-graph-bar-value"> </div></div></td></tr>
+<tr class="even"><td> &raquo; Event: View.beforeRender</td> <td>0.05</td> <td><div style="width: 350px;" class="debug-kit-graph-bar"><div style="margin-left: 303px; width: 1px" title="Starting 169.85ms into the request, taking 0.05ms" class="debug-kit-graph-bar-value"> </div></div></td></tr>
+<tr class="odd"><td> &raquo; Rendering APP/View/Users/clinic_cabinet.ctp</td> <td>0.85</td> <td><div style="width: 350px;" class="debug-kit-graph-bar"><div style="margin-left: 303px; width: 2px" title="Starting 170.01ms into the request, taking 0.85ms" class="debug-kit-graph-bar-value"> </div></div></td></tr>
+<tr class="even"><td> &raquo; Event: View.afterRender</td> <td>0.03</td> <td><div style="width: 350px;" class="debug-kit-graph-bar"><div style="margin-left: 305px; width: 1px" title="Starting 170.89ms into the request, taking 0.03ms" class="debug-kit-graph-bar-value"> </div></div></td></tr>
+<tr class="odd"><td> &raquo; Event: View.beforeLayout</td> <td>0.04</td> <td><div style="width: 350px;" class="debug-kit-graph-bar"><div style="margin-left: 305px; width: 1px" title="Starting 171.13ms into the request, taking 0.04ms" class="debug-kit-graph-bar-value"> </div></div></td></tr>
+<tr class="even"><td> &raquo; Rendering APP/View/Layouts/index.ctp</td> <td>0.44</td> <td><div style="width: 350px;" class="debug-kit-graph-bar"><div style="margin-left: 306px; width: 1px" title="Starting 171.26ms into the request, taking 0.44ms" class="debug-kit-graph-bar-value"> </div></div></td></tr>
+<tr class="odd"><td>Event: View.afterLayout</td> <td>0.00</td> <td><div style="width: 350px;" class="debug-kit-graph-bar"><div style="margin-left: 307px; width: 1px" title="Starting 171.73ms into the request, taking 0.00ms" class="debug-kit-graph-bar-value"> </div></div></td></tr></table></div>
+						</div>
+						<div class="panel-content-data panel-history" id="timer-history">
+							<!-- content here -->
+						</div>
+					</div>
+					<div class="panel-resize-handle ui-control">====</div>
+				</div>
+						</li>
+								<li class="panel-tab">
+			<a href="#log">Log</a>				<div class="panel-content" id="log-tab">
+					<a href="#" class="panel-toggle ui-control ui-button">+</a>
+					<div class="panel-resize-region">
+						<div class="panel-content-data">
+							<h2>Logs</h2>
+<div class="code-table">
+				<p class="info">There were no log entries made this request</p>
+	</div>
+						</div>
+						<div class="panel-content-data panel-history" id="log-history">
+							<!-- content here -->
+						</div>
+					</div>
+					<div class="panel-resize-handle ui-control">====</div>
+				</div>
+						</li>
+								<li class="panel-tab">
+			<a href="#variables">Variables</a>				<div class="panel-content" id="variables-tab">
+					<a href="#" class="panel-toggle ui-control ui-button">+</a>
+					<div class="panel-resize-region">
+						<div class="panel-content-data">
+							<h2> View Variables</h2>
+<ul class="neat-array depth-0"><li><strong>id</strong>24</li><li><strong>data</strong>(array)<ul class="neat-array depth-1"><li><strong>User</strong>(array)<ul class="neat-array depth-2"><li><strong>id</strong>24</li><li><strong>username</strong>nurzhananuarbek@mail.ru</li><li><strong>password</strong>$2a$10$flZuLjYzNU5GPOXiBY5co.9cqGWfis2OIojm5MJT45WKncH/g1Jya</li><li><strong>role</strong>user</li><li><strong>type</strong>clinic</li><li><strong>oblast</strong>Акмолинская область</li><li><strong>city</strong>test</li><li><strong>active</strong>(false)</li><li><strong>created</strong>2020-06-30 23:46:02</li><li><strong>modified</strong>2020-06-30 23:46:02</li></ul></li></ul></li><li><strong>title_for_layout</strong>Личный кабинет</li><li><strong>clinic_data</strong>(array)<ul class="neat-array depth-1"><li><strong>ClinicData</strong>(array)<ul class="neat-array depth-2"><li><strong>id</strong>5</li><li><strong>user_id</strong>24</li><li><strong>title</strong>asdasd</li><li><strong>address_yur</strong>123</li><li><strong>address_fakt</strong>asdasd</li><li><strong>licenzia</strong>0702e04f58d3450d00c7f97635f5bb4b.svg</li><li><strong>forma</strong>123</li><li><strong>okozanie</strong>Клиника</li><li><strong>struktura</strong>1cd8442f0135a3e96efd61558e4f946a.svg</li><li><strong>svedeniya</strong>123</li><li><strong>rekvizity</strong>123</li><li><strong>prezentaciya</strong>890fbee18133367555f76847625e97ec.svg</li><li><strong>spravka</strong>d918ad91a790ff35238df99e2023b945.svg</li><li><strong>shtatnoe_raspisanie</strong>a76521dd729428224ec664adac37deea.svg</li><li><strong>kontakt</strong>123123</li><li><strong>created</strong>2020-06-30 23:46:02</li><li><strong>modified</strong>2020-06-30 23:46:02</li></ul></li></ul></li><li><strong>admin</strong>(false)</li><li><strong>lang</strong></li><li><strong>l</strong>ru</li><li><strong>controller</strong>users</li><li><strong>$request->data</strong>(array)<ul class="neat-array depth-1"><li><strong>User</strong>(array)<ul class="neat-array depth-2"><li><strong>id</strong>24</li><li><strong>username</strong>nurzhananuarbek@mail.ru</li><li><strong>password</strong>$2a$10$flZuLjYzNU5GPOXiBY5co.9cqGWfis2OIojm5MJT45WKncH/g1Jya</li><li><strong>role</strong>user</li><li><strong>type</strong>clinic</li><li><strong>oblast</strong>Акмолинская область</li><li><strong>city</strong>test</li><li><strong>active</strong>(false)</li><li><strong>created</strong>2020-06-30 23:46:02</li><li><strong>modified</strong>2020-06-30 23:46:02</li></ul></li></ul></li><li><strong>$this->validationErrors</strong>(array)<ul class="neat-array depth-1"><li><strong>User</strong>(empty)</li><li><strong>ClinicData</strong>(empty)</li></ul></li><li><strong>Loaded Helpers</strong>(array)<ul class="neat-array depth-1"><li><strong>0</strong>Html</li><li><strong>1</strong>Form</li><li><strong>2</strong>Session</li><li><strong>3</strong>Common</li><li><strong>4</strong>Number</li><li><strong>5</strong>SimpleGraph</li><li><strong>6</strong>DebugTimer</li><li><strong>7</strong>Toolbar</li><li><strong>8</strong>HtmlToolbar</li></ul></li></ul>						</div>
+						<div class="panel-content-data panel-history" id="variables-history">
+							<!-- content here -->
+						</div>
+					</div>
+					<div class="panel-resize-handle ui-control">====</div>
+				</div>
+						</li>
+								<li class="panel-tab">
+			<a href="#environment">Environment</a>				<div class="panel-content" id="environment-tab">
+					<a href="#" class="panel-toggle ui-control ui-button">+</a>
+					<div class="panel-resize-region">
+						<div class="panel-content-data">
+							<h2>App Constants</h2>
+No application environment available.
+<h2>CakePHP Constants</h2>
+<table class="debug-table"><tr><th>Constant</th> <th>Value</th></tr><tr class="odd"><td>APP</td> <td>/var/www/vhosts/acqh.kz/new.acqh.kz/app/</td></tr>
+<tr class="even"><td>APP_DIR</td> <td>app</td></tr>
+<tr class="odd"><td>APPLIBS</td> <td>/var/www/vhosts/acqh.kz/new.acqh.kz/app/Lib/</td></tr>
+<tr class="even"><td>CACHE</td> <td>/var/www/vhosts/acqh.kz/new.acqh.kz/app/tmp/cache/</td></tr>
+<tr class="odd"><td>CAKE</td> <td>/var/www/vhosts/acqh.kz/new.acqh.kz/lib/Cake/</td></tr>
+<tr class="even"><td>CAKE_CORE_INCLUDE_PATH</td> <td>/var/www/vhosts/acqh.kz/new.acqh.kz/lib</td></tr>
+<tr class="odd"><td>CORE_PATH</td> <td>/var/www/vhosts/acqh.kz/new.acqh.kz/lib/</td></tr>
+<tr class="even"><td>CAKE_VERSION</td> <td>2.6.2</td></tr>
+<tr class="odd"><td>CSS</td> <td>/var/www/vhosts/acqh.kz/new.acqh.kz/app/webroot/css/</td></tr>
+<tr class="even"><td>CSS_URL</td> <td>css/</td></tr>
+<tr class="odd"><td>DS</td> <td>/</td></tr>
+<tr class="even"><td>FULL_BASE_URL</td> <td>https://acqh.kz</td></tr>
+<tr class="odd"><td>IMAGES</td> <td>/var/www/vhosts/acqh.kz/new.acqh.kz/app/webroot/img/</td></tr>
+<tr class="even"><td>IMAGES_URL</td> <td>img/</td></tr>
+<tr class="odd"><td>JS</td> <td>/var/www/vhosts/acqh.kz/new.acqh.kz/app/webroot/js/</td></tr>
+<tr class="even"><td>JS_URL</td> <td>js/</td></tr>
+<tr class="odd"><td>LOGS</td> <td>/var/www/vhosts/acqh.kz/new.acqh.kz/app/tmp/logs/</td></tr>
+<tr class="even"><td>ROOT</td> <td>/var/www/vhosts/acqh.kz/new.acqh.kz</td></tr>
+<tr class="odd"><td>TESTS</td> <td>/var/www/vhosts/acqh.kz/new.acqh.kz/app/Test/</td></tr>
+<tr class="even"><td>TMP</td> <td>/var/www/vhosts/acqh.kz/new.acqh.kz/app/tmp/</td></tr>
+<tr class="odd"><td>VENDORS</td> <td>/var/www/vhosts/acqh.kz/new.acqh.kz/vendors/</td></tr>
+<tr class="even"><td>WEBROOT_DIR</td> <td>webroot</td></tr>
+<tr class="odd"><td>WWW_ROOT</td> <td>/var/www/vhosts/acqh.kz/new.acqh.kz/app/webroot/</td></tr></table>
+<h2>PHP Environment</h2>
+<table class="debug-table"><tr><th>Environment Variable</th> <th>Value</th></tr><tr class="odd"><td>Php Version</td> <td>5.6.40</td></tr>
+<tr class="even"><td>Path</td> <td>/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin</td></tr>
+<tr class="odd"><td>Pp Custom Php Ini</td> <td>/var/www/vhosts/system/acqh.kz/etc/php.ini</td></tr>
+<tr class="even"><td>Pp Custom Php Cgi Index</td> <td>plesk-php56-fastcgi</td></tr>
+<tr class="odd"><td>Script Name</td> <td>/app/webroot/index.php</td></tr>
+<tr class="even"><td>Request Uri</td> <td>/users/clinic_cabinet</td></tr>
+<tr class="odd"><td>Query String</td> <td></td></tr>
+<tr class="even"><td>Request Method</td> <td>GET</td></tr>
+<tr class="odd"><td>Server Protocol</td> <td>HTTP/1.0</td></tr>
+<tr class="even"><td>Gateway Interface</td> <td>CGI/1.1</td></tr>
+<tr class="odd"><td>Redirect Url</td> <td>/app/webroot/users/clinic_cabinet</td></tr>
+<tr class="even"><td>Remote Port</td> <td>6705</td></tr>
+<tr class="odd"><td>Script Filename</td> <td>/var/www/vhosts/acqh.kz/new.acqh.kz/app/webroot/index.php</td></tr>
+<tr class="even"><td>Server Admin</td> <td>acofqh@yandex.kz</td></tr>
+<tr class="odd"><td>Context Document Root</td> <td>/var/www/vhosts/acqh.kz/new.acqh.kz</td></tr>
+<tr class="even"><td>Context Prefix</td> <td></td></tr>
+<tr class="odd"><td>Request Scheme</td> <td>https</td></tr>
+<tr class="even"><td>Document Root</td> <td>/var/www/vhosts/acqh.kz/new.acqh.kz</td></tr>
+<tr class="odd"><td>Remote Addr</td> <td>92.47.153.124</td></tr>
+<tr class="even"><td>Server Port</td> <td>443</td></tr>
+<tr class="odd"><td>Server Addr</td> <td>195.210.46.38</td></tr>
+<tr class="even"><td>Server Name</td> <td>acqh.kz</td></tr>
+<tr class="odd"><td>Server Software</td> <td>Apache</td></tr>
+<tr class="even"><td>Server Signature</td> <td></td></tr>
+<tr class="odd"><td>Http Cookie</td> <td>toolbarDisplay=show; CAKEPHP=n6u2p945t3766cfiol569vgvp5</td></tr>
+<tr class="even"><td>Http Accept Language</td> <td>ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7</td></tr>
+<tr class="odd"><td>Http Accept Encoding</td> <td>gzip, deflate, br</td></tr>
+<tr class="even"><td>Http User Agent</td> <td>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36</td></tr>
+<tr class="odd"><td>Http Sec Fetch Dest</td> <td>empty</td></tr>
+<tr class="even"><td>Http Sec Fetch Mode</td> <td>navigate</td></tr>
+<tr class="odd"><td>Http Sec Fetch Site</td> <td>same-origin</td></tr>
+<tr class="even"><td>Http Connection</td> <td>close</td></tr>
+<tr class="odd"><td>Http X Real Ip</td> <td>92.47.153.124</td></tr>
+<tr class="even"><td>Http Host</td> <td>acqh.kz</td></tr>
+<tr class="odd"><td>Https</td> <td>on</td></tr>
+<tr class="even"><td>Unique Id</td> <td>XvuIcKVHNmXdjoU6nksilgAAAGw</td></tr>
+<tr class="odd"><td>Redirect Status</td> <td>200</td></tr>
+<tr class="even"><td>Redirect Https</td> <td>on</td></tr>
+<tr class="odd"><td>Redirect Unique Id</td> <td>XvuIcKVHNmXdjoU6nksilgAAAGw</td></tr>
+<tr class="even"><td>Redirect Redirect Status</td> <td>200</td></tr>
+<tr class="odd"><td>Redirect Redirect Https</td> <td>on</td></tr>
+<tr class="even"><td>Redirect Redirect Unique Id</td> <td>XvuIcKVHNmXdjoU6nksilgAAAGw</td></tr>
+<tr class="odd"><td>Fcgi Role</td> <td>RESPONDER</td></tr>
+<tr class="even"><td>Php Self</td> <td>/app/webroot/index.php</td></tr>
+<tr class="odd"><td>Request Time Float</td> <td>1593542768.7996</td></tr>
+<tr class="even"><td>Request Time</td> <td>1593542768</td></tr></table>						</div>
+						<div class="panel-content-data panel-history" id="environment-history">
+							<!-- content here -->
+						</div>
+					</div>
+					<div class="panel-resize-handle ui-control">====</div>
+				</div>
+						</li>
+								<li class="panel-tab">
+			<a href="#include">Include</a>				<div class="panel-content" id="include-tab">
+					<a href="#" class="panel-toggle ui-control ui-button">+</a>
+					<div class="panel-resize-region">
+						<div class="panel-content-data">
+							<h2> Included Files</h2>
+
+<h4>Include Paths</h4>
+<ul class="neat-array depth-0"><li><strong>0</strong>/var/www/vhosts/acqh.kz/new.acqh.kz/lib</li><li><strong>2</strong>/opt/plesk/php/5.6/share/pear</li><li><strong>3</strong>-&gt; /var/www/vhosts/acqh.kz/new.acqh.kz/lib/Cake/</li></ul>
+<h4>Included Files</h4>
+<ul class="neat-array depth-0"><li><strong>core</strong>(array)<ul class="neat-array depth-1"><li><strong>Cache</strong>(array)<ul class="neat-array depth-2"><li><strong>0</strong>CORE/Cache/Cache.php</li><li><strong>1</strong>CORE/Cache/Engine/FileEngine.php</li><li><strong>2</strong>CORE/Cache/CacheEngine.php</li></ul></li><li><strong>Component</strong>(array)<ul class="neat-array depth-2"><li><strong>0</strong>CORE/Controller/Component/SessionComponent.php</li><li><strong>1</strong>CORE/Controller/Component/AuthComponent.php</li></ul></li><li><strong>Config</strong>(array)<ul class="neat-array depth-2"><li><strong>0</strong>CORE/Config/routes.php</li><li><strong>1</strong>CORE/Config/config.php</li></ul></li><li><strong>Controller</strong>(array)<ul class="neat-array depth-2"><li><strong>0</strong>CORE/Controller/Controller.php</li><li><strong>1</strong>CORE/Controller/ComponentCollection.php</li><li><strong>2</strong>CORE/Controller/Component.php</li></ul></li><li><strong>Datasource</strong>(array)<ul class="neat-array depth-2"><li><strong>0</strong>CORE/Model/Datasource/CakeSession.php</li><li><strong>1</strong>CORE/Model/Datasource/Database/Mysql.php</li><li><strong>2</strong>CORE/Model/Datasource/DboSource.php</li><li><strong>3</strong>CORE/Model/Datasource/DataSource.php</li></ul></li><li><strong>Error</strong>(array)<ul class="neat-array depth-2"><li><strong>0</strong>CORE/Error/exceptions.php</li><li><strong>1</strong>CORE/Error/ErrorHandler.php</li></ul></li><li><strong>I18n</strong>(array)<ul class="neat-array depth-2"><li><strong>0</strong>CORE/I18n/I18n.php</li><li><strong>1</strong>CORE/I18n/L10n.php</li></ul></li><li><strong>Log</strong>(array)<ul class="neat-array depth-2"><li><strong>0</strong>CORE/Log/CakeLog.php</li><li><strong>1</strong>CORE/Log/LogEngineCollection.php</li><li><strong>2</strong>CORE/Log/Engine/FileLog.php</li><li><strong>3</strong>CORE/Log/Engine/BaseLog.php</li><li><strong>4</strong>CORE/Log/CakeLogInterface.php</li></ul></li><li><strong>Model</strong>(array)<ul class="neat-array depth-2"><li><strong>0</strong>CORE/Model/Model.php</li><li><strong>1</strong>CORE/Model/BehaviorCollection.php</li><li><strong>2</strong>CORE/Model/ConnectionManager.php</li></ul></li><li><strong>Network</strong>(array)<ul class="neat-array depth-2"><li><strong>0</strong>CORE/Network/CakeRequest.php</li><li><strong>1</strong>CORE/Network/CakeResponse.php</li></ul></li><li><strong>Other</strong>(array)<ul class="neat-array depth-2"><li><strong>0</strong>CORE/bootstrap.php</li><li><strong>1</strong>CORE/basics.php</li><li><strong>2</strong>CORE/Core/App.php</li><li><strong>3</strong>CORE/Core/Configure.php</li><li><strong>4</strong>CORE/Core/CakePlugin.php</li><li><strong>5</strong>CORE/Event/CakeEventListener.php</li><li><strong>6</strong>CORE/Event/CakeEvent.php</li><li><strong>7</strong>CORE/Event/CakeEventManager.php</li><li><strong>8</strong>CORE/Core/Object.php</li></ul></li><li><strong>Routing</strong>(array)<ul class="neat-array depth-2"><li><strong>0</strong>CORE/Routing/Dispatcher.php</li><li><strong>1</strong>CORE/Routing/Filter/AssetDispatcher.php</li><li><strong>2</strong>CORE/Routing/DispatcherFilter.php</li><li><strong>3</strong>CORE/Routing/Filter/CacheDispatcher.php</li><li><strong>4</strong>CORE/Routing/Router.php</li><li><strong>5</strong>CORE/Routing/Route/CakeRoute.php</li><li><strong>6</strong>CORE/Routing/Route/PluginShortRoute.php</li></ul></li><li><strong>Utility</strong>(array)<ul class="neat-array depth-2"><li><strong>0</strong>CORE/Utility/Hash.php</li><li><strong>1</strong>CORE/Utility/Inflector.php</li><li><strong>2</strong>CORE/Utility/ObjectCollection.php</li><li><strong>3</strong>CORE/Utility/Debugger.php</li><li><strong>4</strong>CORE/Utility/String.php</li><li><strong>5</strong>CORE/Utility/ClassRegistry.php</li></ul></li><li><strong>View</strong>(array)<ul class="neat-array depth-2"><li><strong>0</strong>CORE/View/HelperCollection.php</li></ul></li></ul></li><li><strong>app</strong>(array)<ul class="neat-array depth-1"><li><strong>Config</strong>(array)<ul class="neat-array depth-2"><li><strong>0</strong>APP/Config/core.php</li><li><strong>1</strong>APP/Config/bootstrap.php</li><li><strong>2</strong>APP/Config/routes.php</li><li><strong>3</strong>APP/Config/database.php</li></ul></li><li><strong>Controller</strong>(array)<ul class="neat-array depth-2"><li><strong>0</strong>APP/Controller/UsersController.php</li><li><strong>1</strong>APP/Controller/AppController.php</li></ul></li><li><strong>Model</strong>(array)<ul class="neat-array depth-2"><li><strong>0</strong>APP/Model/User.php</li><li><strong>1</strong>APP/Model/AppModel.php</li><li><strong>2</strong>APP/Model/ClinicData.php</li></ul></li><li><strong>Other</strong>(array)<ul class="neat-array depth-2"><li><strong>0</strong>APP/webroot/index.php</li></ul></li></ul></li><li><strong>plugins</strong>(array)<ul class="neat-array depth-1"><li><strong>DebugKit</strong>(array)<ul class="neat-array depth-2"><li><strong>Component</strong>(array)<ul class="neat-array depth-3"><li><strong>0</strong>DebugKit/Controller/Component/ToolbarComponent.php</li></ul></li><li><strong>Plugin</strong>(array)<ul class="neat-array depth-3"><li><strong>0</strong>DebugKit/Lib/DebugMemory.php</li><li><strong>1</strong>DebugKit/Lib/Panel/HistoryPanel.php</li><li><strong>2</strong>DebugKit/Lib/DebugPanel.php</li><li><strong>3</strong>DebugKit/Lib/Panel/SessionPanel.php</li><li><strong>4</strong>DebugKit/Lib/Panel/RequestPanel.php</li><li><strong>5</strong>DebugKit/Lib/Panel/SqlLogPanel.php</li><li><strong>6</strong>DebugKit/Lib/Panel/TimerPanel.php</li><li><strong>7</strong>DebugKit/Lib/Panel/LogPanel.php</li><li><strong>8</strong>DebugKit/Lib/Log/Engine/DebugKitLog.php</li><li><strong>9</strong>DebugKit/Lib/Panel/VariablesPanel.php</li><li><strong>10</strong>DebugKit/Lib/Panel/EnvironmentPanel.php</li><li><strong>11</strong>DebugKit/Lib/Panel/IncludePanel.php</li><li><strong>12</strong>DebugKit/Lib/DebugTimer.php</li></ul></li></ul></li></ul></li></ul>						</div>
+						<div class="panel-content-data panel-history" id="include-history">
+							<!-- content here -->
+						</div>
+					</div>
+					<div class="panel-resize-handle ui-control">====</div>
+				</div>
+						</li>
+				</ul>
+	</div>
+
+</body>
+</html>

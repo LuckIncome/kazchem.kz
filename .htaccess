@@ -1,0 +1,67 @@
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^www.kazchem.kz [NC]
+RewriteRule ^(.*)$ https://kazchem.kz/$1 [L,R=301]
+
+<IfModule mod_rewrite.c>
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^www.kazchem.kz [NC]
+RewriteRule ^(.*)$ https://kazchem.kz/$1 [L,R=301]
+	RewriteCond %{HTTPS} !=on
+	RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
+   RewriteRule    ^$ app/webroot/    [L]
+   RewriteRule    (.*) app/webroot/$1 [L]
+</IfModule>
+
+RewriteRule ^index.php$ / [QSA,R]
+RewriteRule ^index.html$ / [QSA,R]
+
+AddOutputFilterByType DEFLATE text/plain
+AddOutputFilterByType DEFLATE text/html
+AddOutputFilterByType DEFLATE text/xml
+AddOutputFilterByType DEFLATE text/css
+AddOutputFilterByType DEFLATE text/javascript
+AddOutputFilterByType DEFLATE application/xml
+AddOutputFilterByType DEFLATE application/xhtml+xml
+AddOutputFilterByType DEFLATE application/rss+xml
+AddOutputFilterByType DEFLATE application/javascript
+AddOutputFilterByType DEFLATE application/x-javascript
+
+# сжатие text, html, javascript, css, xml, jpeg, png, gif:
+<ifModule mod_deflate.c>
+AddOutputFilterByType DEFLATE text/html text/plain text/xml application/xml application/xhtml+xml text/css text/javascript application/javascript application/x-javascript image/jpeg image/png image/gif
+</ifModule>
+
+# кеш браузера
+<ifModule mod_expires.c>
+AddType application/x-font-woff .woff
+AddType application/x-font-woff2 .woff2
+ExpiresActive On
+ 
+# Включаем кэширование изображений и флэш на месяц
+ExpiresByType image/x-icon "access plus 1 month"
+ExpiresByType image/jpeg "access plus 1 month"
+ExpiresByType image/jpg "access plus 1 month"
+ExpiresByType image/png "access plus 1 month"
+ExpiresByType image/gif "access plus 1 month"
+ExpiresByType image/webp "access plus 1 month"
+ExpiresByType application/x-shockwave-flash "access plus 1 month"
+
+# Включаем кэширование видео на месяц
+ExpiresByType video/mp4 "access plus 1 month"
+ExpiresByType video/ogg "access plus 1 month"
+ExpiresByType video/webm "access plus 1 month"
+ 
+# Включаем кэширование css, javascript и текстовых файлоф на одну неделю
+ExpiresByType text/css "access plus 7 days"
+ExpiresByType text/javascript "access plus 7 days"
+ExpiresByType application/javascript "access plus 7 days"
+ExpiresByType application/x-javascript "access plus 7 days"
+
+# Нестандартные шрифты сайта 
+ExpiresByType application/x-font-ttf "access plus 3 days"
+ExpiresByType font/opentype "access plus 3 days"
+ExpiresByType application/x-font-woff "access plus 1 month"
+ExpiresByType application/x-font-woff2 "access plus 1 month"
+ExpiresByType image/svg+xml "access plus 3 days"
+ExpiresByType application/vnd.ms-fontobject "access plus 3 days"
+</ifModule>
